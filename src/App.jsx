@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { db } from "./firebase.jsx";
 import { generateName } from "./namegenerator.jsx";
 import logo from "./assets/logo.png";
+
 import {
   collection,
   addDoc,
@@ -12,6 +13,7 @@ import {
   updateDoc,
   doc,
 } from "firebase/firestore";
+
 import { motion } from "framer-motion";
 import { RiTwitterXFill } from "react-icons/ri"
 
@@ -82,7 +84,7 @@ function App() {
   >
     🔄 Generate New Name
   </button>
-  
+
   <button
     onClick={() => {
       navigator.clipboard.writeText(currentName);
