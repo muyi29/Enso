@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { db } from "./firebase.jsx";
-import { generateName } from "./namegenerator.jsx";
+import { generateName } from "./nameGenerator.jsx";
 import logo from "./assets/logo.png";
 
 import {
